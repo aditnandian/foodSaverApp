@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.foodsaverapps" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.foodsaverapps" parent="Base.Theme.foodsaverapps" />
+
+    <style name="RegisterVariable" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RegisterVariables" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RegisterFields" parent="Theme.foodsaverapps">
+        <item name="android:background">@drawable/bg_login_register_button_light_green</item>
+        <item name="android:layout_width">360dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginStart">-5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:textColor">#3E721E</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="RegisterVariable2" parent="RegisterVariable">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">#A03E721D</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RegisterFields2" parent="RegisterFields">
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="DropDown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:background">@drawable/bg_login_register_button_light_green</item>
+        <item name="android:layout_width">360dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">-5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#3E721E</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ProfLines" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">#DCE2EF</item>
+    </style>
+
+    <style name="ProfileTop" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="ProfileBottom" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#979797</item>
+    </style>
+
+    <style name="ProfImages" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <style name="SellerFts" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#626262</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Articles" parent="Theme.foodsaverapps">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+    </style>
+
+</resources>

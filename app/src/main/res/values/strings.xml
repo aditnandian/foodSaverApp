@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">FoodSaverApp</string>
+    <string name="next">Next</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">301403934191-bhujetninn0s5k8urukqk41u87ccpb9a.apps.googleusercontent.com</string>
+    <string name="login_or_register">Login Or Register\nas</string>
+    <string name="login">Login</string>
+    <string name="Register">Register</string>
+    <string name="seller">Seller</string>
+    <string name="customer">Customer</string>
+    <string name="categories">Categories</string>
+    <string name="heavymeal">Heavy Meal</string>
+    <string name="snacks">Snacks</string>
+    <string name="drinks">Drinks</string>
+    <string name="dessert">Dessert</string>
+    <string name="food">Food</string>
+    <string name="items">items</string>
+    <string name="recommendation">Recommendations</string>
+    <string name="article">Article</string>
+    <string name="articletitle">No Title</string>
+    <string name="articledetail">Lorem ipsum dolor sit amet…</string>
+    <string name="agreement1">Read the document below and agree to the terms to proceed.</string>
+    <string name="agreement2">With this, I as a seller on the Foodsaver application agree that every discount I enter in this application is to promote the goods/services that I offer without any obligation to process payment and delivery through the Foodsaver.\n
+        \nI understand and agree that:
+        \n1.The discount given only applies to direct purchases at the place I installed, and does not include online transactions via the Foodsaver application.
+        \n2.I am fully responsible for any changes or cancellation of discounts that I provide.
+        \n3.Foodsaver is not responsible for any claims, losses or damages arising from the use of this discount by buyers or third parties.
+        \n4.I agree that the discount I provide shall not conflict with applicable laws or policies established by Foodsaver.
+        \n5.Foodsaver reserves the right to review and remove my discount if it is deemed to violate the terms and conditions.
+        \nBy pressing the "Agree" button or entering a discount in the app, I acknowledge that I have read, understood, and agree to all of the above terms.</string>
+    <string name="agreementread">I have read all the terms &amp; conditions, and agree to them.</string>
+    <string name="transactions">Transactions</string>
+    <string name="active">Active</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="notransactions">You Don\'t Have Any Transactions</string>
+    <string name="profilesettings">Profile Settings</string>
+    <string name="fullname">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="changesettings">Change Settings</string>
+    <string name="password">Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="changepassword">Change Password</string>
+    <string name="accsettings">Account Settings</string>
+    <string name="donthaveaccount">Don\'t have an Account? Tap here to Register</string>
+    <string-array name="category">
+        <item>Heavy Meal</item>
+        <item>Snacks</item>
+        <item>Drinks</item>
+        <!--        <item>Dessert</item>-->
+    </string-array>
+
+    <string name="google_maps_key" translatable="false">AIzaSyAb7ZtwnOJFJJQeWu1YHCtQVquISfP8xVM</string>
+
+    <string name="add_discount">Add Discount</string>
+    <string name="add_a_discount">Add a Discount</string>
+    <string name="set_your_discounts_at">Set your discounts at minimum order bill value you can also add more discounts at multiple minimum order bill values.</string>
+    <string name="more_discount">More discount, more customers!</string>
+    <string name="discountval">Discount:</string>
+    <string name="discount_name">Discount Name:</string>
+    <string name="user_agreement">User Agreement</string>
+    <string name="add_menu">Add Menu</string>
+    <string name="add_menu_image">Add Menu Image</string>
+    <string name="add_menu_image_2">Browse your Gallery or take a Picture from the phone Camera to upload.</string>
+    <string name="menu_name">Menu Name</string>
+    <string name="food_or_drink">Food or Drink</string>
+    <string name="menu_price">Menu Price</string>
+    <string name="menu_category">Menu Category</string>
+    <string name="choose_one">Choose One</string>
+    <string name="menu_description">Menu Description</string>
+    <string name="this_is_product">This is a Product.</string>
+    <string name="price">Price</string>
+    <string name="undefined">Undefined</string>
+    <string name="stock">Available</string>
+    <string name="my_discounts">My Discounts</string>
+    <string name="my_discounts_2">List of discounts provided to customers.</string>
+    <string name="welcome">Welcome to FoodSaver</string>
+    <string name="enter_login">Enter Your Email for Login</string>
+    <string name="input_email">Input Your Email</string>
+    <string name="input_password">Input Your Password</string>
+    <string name="set_location">Set Location</string>
+    <string name="customer_order">Customer Order</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="discount_used">Discount Used</string>
+    <string name="menu_ordered">Menu Ordered</string>
+    <string name="complete">Complete</string>
+    <string name="cancel">Cancel</string>
+    <string name="decline">Decline</string>
+    <string name="confirm">Confirm</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="voucher_applied">Discount Applied</string>
+    <string name="place_order">Place Order</string>
+    <string name="my_menus">My Menus</string>
+    <string name="adjust_menus">Add and adjust menus here.</string>
+    <string name="create_account">Create Account</string>
+    <string name="please_fill">Please fill all your data below to Register.</string>
+    <string name="email_address">Email Address</string>
+    <string name="passholder">******</string>
+    <string name="register">Register</string>
+    <string name="revenue">Revenue</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="order_completed">Order Completed</string>
+    <string name="upload_shop_background">Upload Shop Background Here</string>
+    <string name="enter_shop_name">Enter your Shop name</string>
+    <string name="location_undefined">Location not yet defined.</string>
+    <string name="open_maps">Open Maps</string>
+    <string name="complete_your_profile">Complete your Profile!</string>
+    <string name="complete_your_profile_2">Complete your Profile to start using FoodSaver App.</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="shop_name_1">Shop Name</string>
+    <string name="shop_address_1">\nShop Address\n</string>
+    <string name="menus">Menus</string>
+    <string name="cart">Cart</string>
+    <string name="proceed">Proceed</string>
+    <string name="you_placed_order">Your Placed Your \n Order Successfully</string>
+    <string name="please_pickup">Please Pickup Your Order to</string>
+    <string name="please_contact">You can start your conversation with the shop through a messager.</string>
+    <string name="continuee">Continue</string>
+    <string name="manage_menu">Manage\nMenu</string>
+    <string name="manage_ndiscount">Manage\nDiscount</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="profile">Profile</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="change_information">Change your account information</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_password_2">Change your password</string>
+    <string name="logout">Logout</string>
+    <string name="menu">Menu</string>
+    <string name="shop">Shop</string>
+    <string name="search">Search</string>
+    <string name="shop_settings">Shop Settings</string>
+    <string name="shop_details">Here you can view and edit your shop details.</string>
+    <string name="add_shop_image">Add Shop Image</string>
+    <string name="browse_gallery">Browse your Gallery or take a Picture from the Camera to upload</string>
+    <string name="shop_details_2">Shop Details</string>
+    <string name="save">Save</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="change_address">Tap here to Change Address</string>
+    <string name="shop_category">Shop Category</string>
+    <string name="pending">Pending</string>
+    <string name="voucher">Discount</string>
+    <string name="no_menus">No Menus Yet</string>
+    <string name="tap_here_menus">Tap here to add menus.</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="check">Check</string>
+    <string name="visit_shop">Visit Shop</string>
+    <string name="buy">Buy</string>
+    <string name="quantity">Quantity:</string>
+    <string name="paid">Paid:</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="shop_list">Shop List</string>
+    <string name="visit">Visit</string>
+    <string name="apply">Apply</string>
+    <string name="unavail">Unavailable</string>
+    <string name="nomenua">No Menus Yet</string>
+    <string name="nomenub">This shop has no menus</string>
+    <string-array name="categorys">
+        <item>None</item>               <!--000-->
+        <item>Heavy Meals</item>        <!--001-->
+        <item>Drinks</item>             <!--010-->
+        <item>Meals and Drinks</item>   <!--011-->
+        <item>Snacks</item>             <!--100-->
+        <item>Foods</item>              <!--101-->
+        <item>Snacks and Drinks</item>  <!--110-->
+        <item>Foods and Drinks</item>   <!--111-->
+    </string-array>
+    <string-array name="date_filter_options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+        <item>All</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/contain"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foodsaverlogowithouttext" />
+
+    <ImageView
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:background="@drawable/bg_content_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ShopImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintTop_toTopOf="@id/contain"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:background="@drawable/bg_content_dash" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/upload_shop_background"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/ShopImage"
+        app:layout_constraintEnd_toEndOf="@id/ShopImage"
+        app:layout_constraintTop_toTopOf="@id/ShopImage"
+        app:layout_constraintBottom_toBottomOf="@id/ShopImage"/>
+
+    <ImageButton
+        android:id="@+id/ShopView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/add_image"
+        app:layout_constraintStart_toStartOf="@id/contain"
+        app:layout_constraintTop_toBottomOf="@id/ShopImage" />
+
+    <EditText
+        android:id="@+id/ShopName"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_shop_name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/ShopView"
+        app:layout_constraintTop_toTopOf="@id/ShopView" />
+
+    <TextView
+        android:id="@+id/currentLocation"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/location_undefined"
+        android:textSize="16sp"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ShopView"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/open_maps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/currentLocation"
+        app:layout_constraintBottom_toTopOf="@id/subcontain_a"/>
+
+    <ImageView
+        android:id="@+id/subcontain_a"
+        android:background="@drawable/bg_content_bordered"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_maps" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/complete_your_profile"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/subcontain_a"
+        app:layout_constraintTop_toTopOf="@id/subcontain_a"/>
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/complete_your_profile_2"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/subcontain_a"
+        app:layout_constraintTop_toBottomOf="@id/Text1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonComplete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_login_register_button_light_green"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/complete_profile"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="@id/subcontain_a"
+        app:layout_constraintEnd_toEndOf="@id/subcontain_a"
+        app:layout_constraintTop_toBottomOf="@id/Text2"
+        app:layout_constraintBottom_toBottomOf="@id/subcontain_a" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

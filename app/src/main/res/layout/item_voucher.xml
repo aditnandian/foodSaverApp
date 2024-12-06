@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/bg_content_bordered"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/discic"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/coupon"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toTopOf="@id/container"
+            app:layout_constraintBottom_toBottomOf="@id/DiscText4"/>
+
+        <TextView
+            android:id="@+id/DiscText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:hint="@string/undefined"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/discic"
+            app:layout_constraintTop_toTopOf="@id/discic"
+            app:layout_constraintBottom_toTopOf="@id/DiscText1"/>
+
+        <TextView
+            android:id="@+id/DiscText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/undefined"
+            android:textSize="18sp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/DiscText"
+            app:layout_constraintTop_toBottomOf="@id/DiscText"
+            app:layout_constraintBottom_toTopOf="@id/DiscText5"/>
+
+        <TextView
+            android:id="@+id/DiscText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textSize="27sp"
+            android:textColor="#000"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toEndOf="@id/DiscText4"
+            app:layout_constraintTop_toTopOf="@id/DiscText"
+            app:layout_constraintBottom_toBottomOf="@id/DiscText1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/DiscText4"
+            android:layout_width="72dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_login_button_ungreen"
+            android:text="@string/delete"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintBottom_toBottomOf="@id/container" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/DiscText5"
+            android:layout_width="72dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_login_button_green"
+            android:text="@string/edit"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@id/DiscText4"
+            app:layout_constraintTop_toTopOf="@id/DiscText4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

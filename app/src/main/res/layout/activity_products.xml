@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addbutton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_login_button_green"
+        android:text="@string/add_menu"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/bottomline"
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="#0A0A0A"
+        android:layout_marginBottom="20dip"
+        app:layout_constraintBottom_toTopOf="@id/addbutton"/>
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/my_menus"
+        android:textSize="33sp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/BackButton"
+        app:layout_constraintTop_toBottomOf="@id/BackButton"/>
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/adjust_menus"
+        android:textSize="16sp"
+        android:textColor="#909090"
+        app:layout_constraintStart_toStartOf="@id/TextView1"
+        app:layout_constraintTop_toBottomOf="@id/TextView1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MenuRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2"
+        tools:listitem="@layout/item_item" />
+
+<!--    <TextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginHorizontal="45dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:background="@drawable/bg_login_button_green"-->
+<!--        android:text="Add a Product"-->
+<!--        android:textSize="19sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

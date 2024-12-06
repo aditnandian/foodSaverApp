@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewProfileSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="1000sp"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeStepGranularity="1sp"
+        android:text="@string/profile"
+        android:textStyle="bold"
+        android:fontFamily="@font/yugothr"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="1000sp"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeStepGranularity="1sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline6"
+        app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="1000sp"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeStepGranularity="1sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="1000sp"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeStepGranularity="1sp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <ImageView
+        android:id="@+id/imageViewProfilePicture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/profile_picture"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonProfileInformation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/profile_information"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="@id/guideline5"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFFFF"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="35dp"
+        android:paddingVertical="15dp"
+        app:layout_constraintStart_toStartOf="@id/imageButtonProfileInformation"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonProfileInformation"
+        app:layout_constraintTop_toTopOf="@id/imageButtonProfileInformation"
+        app:layout_constraintBottom_toBottomOf="@id/imageButtonProfileInformation"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_information"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_information"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonChangePassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/change_password"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonProfileInformation"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFFFF"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="35dp"
+        android:paddingVertical="15dp"
+        app:layout_constraintStart_toStartOf="@id/imageButtonChangePassword"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonChangePassword"
+        app:layout_constraintTop_toTopOf="@id/imageButtonChangePassword"
+        app:layout_constraintBottom_toBottomOf="@id/imageButtonChangePassword"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password_2"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/logout"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintDimensionRatio="12:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonChangePassword"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFFFF"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="35dp"
+        android:paddingTop="5dp"
+        android:text="@string/logout"
+        android:textSize="18sp"
+        android:textColor="#777"
+        app:layout_constraintStart_toStartOf="@id/imageButtonLogout"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonLogout"
+        app:layout_constraintTop_toTopOf="@id/imageButtonLogout"
+        app:layout_constraintBottom_toBottomOf="@id/imageButtonLogout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

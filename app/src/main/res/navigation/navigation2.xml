@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.foodsaverapps.Fragment.Home2Fragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home_2" />
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.foodsaverapps.Fragment.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" />
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.foodsaverapps.Fragment.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/transactionShopFragment"
+        android:name="com.example.foodsaverapps.Fragment.TransactionShopFragment"
+        android:label="fragment_transaction_shop"
+        tools:layout="@layout/fragment_transaction" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.foodsaverapps.Fragment.Profile2Fragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.foodsaverapps.Fragment.SellerProfileFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_seller_profile" />
+    
+</navigation>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.HomeFragment">
+
+    <TextView
+        android:id="@+id/textViewCategories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/yugothr"
+        android:text="@string/categories"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/textViewRecommendation"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHeavyMeal"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/heavymeal"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonDrinks"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDrinks"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/drinks"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/imageButtonHeavyMeal"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonSnack"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSnack"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bread"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/imageButtonDrinks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/textViewHeavyMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/heavymeal"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="@id/imageButtonHeavyMeal"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonHeavyMeal"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonHeavyMeal" />
+
+    <TextView
+        android:id="@+id/textViewDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/drinks"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/imageButtonDrinks"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonDrinks"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonDrinks" />
+
+    <TextView
+        android:id="@+id/textViewSnacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/snacks"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/imageButtonSnack"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonSnack"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonSnack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/image_slider"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHeavyMeal"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/PopulerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRecommendation"
+        tools:listitem="@layout/populer_item" />
+
+    <TextView
+        android:id="@+id/textViewRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yugothr"
+        android:text="@string/recommendation"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_slider" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

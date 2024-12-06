@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <View
+        android:id="@+id/content"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login_register_button_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagecardview"
+        app:cardCornerRadius="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@id/content"
+        app:layout_constraintTop_toTopOf="@id/content"
+        app:layout_constraintBottom_toBottomOf="@id/content">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/atitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:letterSpacing="0.02"
+        android:text="@string/undefined"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:maxLines="3"
+        app:layout_constraintStart_toEndOf="@id/imagecardview"
+        app:layout_constraintEnd_toEndOf="@id/content"
+        app:layout_constraintTop_toTopOf="@id/content" />
+
+    <TextView
+        android:id="@+id/apreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/articledetail"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:maxLines="8"
+        app:layout_constraintStart_toStartOf="@id/atitle"
+        app:layout_constraintEnd_toEndOf="@id/atitle"
+        app:layout_constraintTop_toBottomOf="@id/atitle"
+        app:layout_constraintBottom_toBottomOf="@id/content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_menu"
+        android:textColor="#3E721D"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addbutton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_login_button_green"
+        android:text="@string/add_menu"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ImageView1"
+        android:layout_width="96dip"
+        android:layout_height="96dip"
+        android:layout_marginTop="30dp"
+        android:padding="33dip"
+        android:background="@drawable/bg_content_dash"
+        app:layout_constraintStart_toStartOf="@id/BackButton"
+        app:layout_constraintTop_toBottomOf="@id/TextView0"
+        app:srcCompat="@drawable/imgbutton" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/TextView1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:text="Add Product"-->
+    <!--        android:textColor="#3E721D"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/add_menu_image"
+        android:textSize="15sp"
+        android:textColor="#A03E721D"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ImageView1"
+        app:layout_constraintTop_toTopOf="@id/ImageView1"/>
+
+    <TextView
+        android:id="@+id/TextView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/add_menu_image_2"
+        android:textSize="12sp"
+        android:textColor="#803E721D"
+        app:layout_constraintStart_toStartOf="@id/TextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextView2"/>
+
+    <TextView
+        style="@style/RegisterVariable2"
+        android:id="@+id/TextView4"
+        android:layout_marginTop="20dp"
+        android:text="@string/menu_name"
+        app:layout_constraintStart_toStartOf="@id/ImageView1"
+        app:layout_constraintTop_toBottomOf="@id/ImageView1"/>
+
+    <EditText
+        style="@style/RegisterFields2"
+        android:id="@+id/TextField1"
+        android:inputType="text"
+        android:hint="@string/food_or_drink"
+        app:layout_constraintStart_toStartOf="@id/TextView4"
+        app:layout_constraintTop_toBottomOf="@id/TextView4"/>
+
+    <TextView
+        style="@style/RegisterVariable2"
+        android:id="@+id/TextView5"
+        android:text="@string/menu_price"
+        app:layout_constraintStart_toStartOf="@id/TextView4"
+        app:layout_constraintTop_toBottomOf="@id/TextField1"/>
+
+    <TextView
+        style="@style/RegisterFields2"
+        android:id="@+id/TextCurrency"
+        android:text="Rp."
+        android:gravity="fill_vertical"
+        app:layout_constraintStart_toStartOf="@id/TextView5"
+        app:layout_constraintTop_toBottomOf="@id/TextView5"/>
+
+    <View
+        android:id="@+id/Separator"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:background="#20000000"
+        app:layout_constraintStart_toStartOf="@id/TextCurrency"
+        app:layout_constraintTop_toTopOf="@id/TextCurrency"
+        app:layout_constraintBottom_toBottomOf="@id/TextCurrency"/>
+
+    <EditText
+        android:id="@+id/CurrencyVal"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00000000"
+        android:hint="0"
+        android:textSize="15sp"
+        android:textColor="#3E721E"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@id/Separator"
+        app:layout_constraintEnd_toEndOf="@id/TextCurrency"
+        app:layout_constraintTop_toTopOf="@id/TextCurrency"
+        app:layout_constraintBottom_toBottomOf="@id/TextCurrency"/>
+
+    <TextView
+        style="@style/RegisterVariable2"
+        android:id="@+id/TextView6"
+        android:text="@string/menu_category"
+        app:layout_constraintStart_toStartOf="@id/TextView4"
+        app:layout_constraintTop_toBottomOf="@id/TextCurrency"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/DropDown"
+        android:id="@+id/TextField2"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/TextView6"
+        app:layout_constraintTop_toBottomOf="@id/TextView6">
+
+        <AutoCompleteTextView
+            android:id="@+id/CatField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:layout_marginBottom="7dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:inputType="none"
+            android:hint="@string/choose_one"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <TextView-->
+    <!--        style="@style/RegisterVariable2"-->
+    <!--        android:id="@+id/TextView7"-->
+    <!--        android:text="@string/menu_stock"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/TextView4"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/TextField2"/>-->
+
+    <!--    <EditText-->
+    <!--        style="@style/RegisterFields2"-->
+    <!--        android:id="@+id/TextField3"-->
+    <!--        android:layout_width="70dp"-->
+    <!--        android:inputType="numberDecimal"-->
+    <!--        android:hint="0"-->
+    <!--        android:maxLength="4"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/TextView7"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/TextView7"/>-->
+
+    <TextView
+        style="@style/RegisterVariable2"
+        android:id="@+id/TextView8"
+        android:text="@string/menu_description"
+        app:layout_constraintStart_toStartOf="@id/TextView4"
+        app:layout_constraintTop_toBottomOf="@id/TextField2"/>
+
+    <EditText
+        style="@style/RegisterFields"
+        android:id="@+id/TextField4"
+        android:layout_height="80dp"
+        android:paddingVertical="10dp"
+        android:inputType="text"
+        android:hint="@string/this_is_product"
+        android:maxLines="4"
+        android:gravity="top"
+        app:layout_constraintStart_toStartOf="@id/TextView8"
+        app:layout_constraintTop_toBottomOf="@id/TextView8"/>
+
+    <TextView
+        style="@style/RegisterVariable2"
+        android:id="@+id/TextView9"
+        android:text="Food lasts for"
+        app:layout_constraintStart_toStartOf="@id/TextView4"
+        app:layout_constraintTop_toBottomOf="@id/TextField4"/>
+
+    <EditText
+        style="@style/RegisterFields"
+        android:id="@+id/TextField5"
+        android:paddingVertical="10dp"
+        android:inputType="text"
+        android:hint="How long food last"
+        android:gravity="top"
+        app:layout_constraintStart_toStartOf="@id/TextView9"
+        app:layout_constraintTop_toBottomOf="@id/TextView9"/>
+
+    <!--    <TextView-->
+    <!--        style="@style/RegisterVariable2"-->
+    <!--        android:id="@+id/TextView9"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:text="Product Available in"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/TextView7"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/TextField2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/TextField2"/>-->
+
+    <!--    <TextView-->
+    <!--        style="@style/RegisterFields2"-->
+    <!--        android:id="@+id/TextField5a"-->
+    <!--        android:layout_width="55dp"-->
+    <!--        android:paddingHorizontal="8dp"-->
+    <!--        android:hint="00:00"-->
+    <!--        android:gravity="center"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/TextView9"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/TextView9"/>-->
+
+    <!--    <TextView-->
+    <!--        style="@style/RegisterFields2"-->
+    <!--        android:id="@+id/TextField5b"-->
+    <!--        android:layout_width="55dp"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:paddingHorizontal="8dp"-->
+    <!--        android:hint="23:59"-->
+    <!--        android:gravity="center"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/TextField5a"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/TextView9"/>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="to"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/TextField5a"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/TextField5b"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/TextField5a"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/TextField5b"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
